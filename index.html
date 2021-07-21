@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Stimulus HTML CSS Template</title>
 
@@ -28,22 +29,25 @@
         <div class="row no-gutters">
 
             <div class="col-md-6 no-gutters">
-                <div class="leftside">
+                <div class="home-leftside">
                     <a>Stimulus</a>
                     <img src="img/home-img.jpg">
                 </div>
             </div>
 
             <div class="col-md-6 no-gutters">
-                <div class="rightside">
+                <div class="home-rightside">
                     <div class="home-title">
-                        <h4>welcome to my website</h4>
-                        <h1>Hello, I am
+
+                        <h4 data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">welcome to my website</h4>
+                        <h1 data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out">Hello, I am
                             <strong>Stimulus</strong> currently based in New York city.</h1>
-                        <p>Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum
-                            in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. Vestibulum id accumsan
-                            quam.
-                        </p>
+                        <div data-aos="fade-up" data-aos-delay="150" data-aos-easing="ease-in-out">
+                            <p>Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum
+                                in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. Vestibulum
+                                id accumsan quam.
+                            </p>
+                        </div>
 
                         <a href="#about" class="btn btn-success">Get Started</a>
 
@@ -57,11 +61,92 @@
     </section>
 
 
+
+    <!--  about section   -->
+
+    <section id="about">
+
+
+        <div class="row no-gutters">
+
+            <div class="col-md-6 no-gutters">
+                <div class="about-part1">
+                    <div class="about-title">
+                        <h1>Donec auctor</h1>
+                        <p class="color-yellow">Sed vulputate vitae diam quis bibendum</p>
+                    </div>
+
+                    <p>Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante. Duis dui urna, faucibus
+                        eget felis eu, iaculis congue sem. Mauris convallis eros massa.</p>
+                    <p>Quisque viverra iaculis aliquam. Etiam volutpat, justo non aliquam bibendum, sem nibh mollis erat, quis
+                        porta odio odio at velit.</p>
+
+                </div>
+            </div>
+
+            <div class="col-md-3 no-gutters">
+                <div class="about-part2">
+                    <img src="img/about-img.jpg">
+                </div>
+            </div>
+
+            <div class="col-md-3 no-gutters">
+                <div class="about-part3">
+
+
+                    <h1>My Skills</h1>
+                    <p class="color-white">Photoshop . HTML CSS JS . Web Design</p>
+
+
+                    <div class="skill">
+                        <strong>Frontend Design</strong>
+                        <span class="pull-right">90%</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <strong>Backend processing</strong>
+                        <span class="pull-right">70%</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <strong>HTML5 & CSS3</strong>
+                        <span class="pull-right">80%</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+    </section>
+
+
+    <!--   service section   -->
+    <section class="service">
+
+    </section>
+
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

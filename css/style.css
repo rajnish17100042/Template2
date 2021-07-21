@@ -9,9 +9,21 @@
 	
 }
 
+.img{
+    background-position: 50% 50% !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+    min-height: 75vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 
 /*  css for home section*/
-.leftside, .rightside{
+.home-leftside, .home-rightside{
  height:100vh;
  
 }
@@ -20,22 +32,25 @@
 
 
 
-.leftside{
+.home-leftside{
     background:rgb(248, 248, 248);
 
 }
 
-.rightside{
+.home-rightside{
     background:#f1e2d7;
 }
-img{    
+.home-leftside > img{    
+    background-size: cover;
+    background-position: 50% 50%;
+    
     height:100vh;
     position:relative;
     margin-left:-174px;
     overflow-x:hidden;
 }
 
-a{
+.home-leftside > a{
     position:absolute;
     margin-left:120px;
     margin-top:20px;
@@ -65,9 +80,9 @@ a{
 
 .home-title > p{
     
-    color: #999;
+    color: rgb(153, 153, 153);
     font-size: 15px;
-    font-weight:150;;
+    font-weight:bold;
     letter-spacing: 2px;
     
     
@@ -80,7 +95,7 @@ a{
     border-radius: 100px;
     color: #232B2B;
     font-size: 13px;
-    font-weight: bold;
+    font-weight:bold;
     letter-spacing: 1.6px;
     padding: 12px 36px;
     margin-top: 30px;
@@ -93,33 +108,145 @@ a{
     border-color: transparent;
     color: #ffffff;
   }
+
+
+
+/*  css for about section   */
+
+.about-part1 , .about-part2, .about-part3{
+    height:62h;
+    overflow-x:hidden;
+}
+
+#about{
+    height:30vh;
+    padding-bottom:0;
+}
+
+.about-part1{
+    background:rgb(255, 255, 255);
+    position:relative;
+    z-index:1;
+    padding:50px;
+    
+}
+
+.about-part1 >h1{
+    font-size: 42px;
+    padding-bottom: 14px;
+    margin-bottom: 0px;
+
+}
+
+.about-part1 .color-yellow{
+    color:rgb(227, 174, 87);
+    font-weight:bold;
+}
+
+.about-part1 > p{
+
+    color: rgba(17, 16, 16, 0.8);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+
+.about-part2 > img{
+       
+  
+    position:relative;
+    z-index:-1;
+    margin-left:-550px;
+    overflow-y:hidden;
+    
+
+    
+    
+
+    
+}
+
+
+.about-part3{
+    background:rgb(227, 174, 87);
+    padding:30px 30px 50px 50px;
+    
+}
+ .about-part3  h1{
+     color:white;
+     font-size:42px;
+     font-weight:400;
+ }
+
+ .about-part3  .color-white{
+    color:white;
+    font-size:18px;
+    
+}
+
+.about-part3  .skill{
+    padding:5px 0 5px 0;
+}
+
+  
+  #about .progress {
+    background: #ffffff;
+    border-radius: 0px;
+    box-shadow: none;
+    height: 2px;
+  }
+  
+  #about .progress-bar-primary {
+    background: #232B2B;
+  }
+  
+  #about strong{
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 10px;
+    
+    
+  }
+  #about span{
+      color:white;
+  }
+
+
+
+  /* css for service section   */
+
+
+
   
   
 
-  
+  /*   css for media query*/
   
   @media screen and (max-width:768px){
+   
+  
+   .leftside > img{
 
-    img{
-
-    position:relative;
-    top:0;
-    right:0;
-    left:0;
-    bottom:0;    
+    position:absolute;
     
-    }
-    
-    .rightside{
-       height:70vh;
-    }
+    overflow-x:hidden;
+   }
 
     .home-title{
         padding:50px;
+
+        
         
     }
+
+
+    /*  for about section */
     
+    
+     
 
-
+  
 
   }

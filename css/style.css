@@ -266,7 +266,54 @@
   }
   
   
+
+
+  /*   css for experience section  */
+  .exp-part1{
+    background:rgb(227, 174, 87);
+}
+
+.exp-part2{
+    background:rgb(245, 137, 37);
+}
   
+.exp-part1, .exp-part2{
+    position:relative;
+    bottom:0;
+    height:60vh;
+    
+}
+
+.exp-part1 img{
+   
+  
+    width:100%;
+    height:60vh;
+}
+
+.exp-part2{
+    padding:45px 0 45px 60px;
+}
+
+.exp-part2 h1,h3{
+   color:white;
+}
+
+.color-white{
+    color:white;
+}
+  
+  #experience .fa {
+    font-size: 42px;
+    margin-right: 14px;
+    color:white;
+  }
+  
+  #experience small {
+    color: rgb(65, 10, 10);
+    font-size:15px;
+    font-weight:bold;
+  }
  
 
 

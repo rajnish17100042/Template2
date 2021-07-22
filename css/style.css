@@ -22,6 +22,12 @@
     left: 0;
 }
 
+
+.color-white{
+    color:white;
+}
+
+
 /*  css for home section*/
 .home-leftside, .home-rightside{
  height:100vh;
@@ -270,7 +276,7 @@
 
   /*   css for experience section  */
   .exp-part1{
-    background:rgb(227, 174, 87);
+    background:rgb(255, 255, 255);
 }
 
 .exp-part2{
@@ -297,11 +303,16 @@
 
 .exp-part2 h1,h3{
    color:white;
+   font-size:30px;
+   font-weight:bold;
 }
 
-.color-white{
-    color:white;
+.exp-part2 p{
+    font-size:18px;
+    
 }
+
+
   
   #experience .fa {
     font-size: 42px;
@@ -316,10 +327,56 @@
   }
  
 
+/* css for education section  */
+.edu-part1{
+    background:rgb(227, 174, 87);
+}
+
+.edu-part2{
+    background:rgb(107, 34, 34);
+}
+  
+.edu-part1, .edu-part2{
+    position:relative;
+    bottom:0;
+    height:70vh;
+    
+}
 
 
+.edu-part1{
+    padding:45px 10px 45px 60px;
+}
+
+.edu-part1 h1,h3{
+   color:white;
+   font-size:30px;
+   font-weight:bold;
+}
+
+.edu-part1 p{
+    font-size:18px;
+    
+}
+
   
+  #education .fa {
+    font-size: 42px;
+    margin-right: 14px;
+    color:white;
+  }
   
+  #education small {
+    color: rgb(65, 10, 10);
+    font-size:15px;
+    font-weight:bold;
+  }
+
+.edu-part2 img{
+    
+    width:100%;
+    height:70vh;
+}
 
 
 
@@ -360,5 +417,18 @@
      
 
   
+    /*   for experience section*/
+    .exp-part2{
+        margin:0;
+        height:70vh;
+    }
+
+
+    /*   for education section*/
+    .edu-part1{
+        margin:0;
+        height:80vh;
+    }
+
 
   }

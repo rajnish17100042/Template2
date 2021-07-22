@@ -113,15 +113,14 @@
 
 /*  css for about section   */
 
-.about-part1 , .about-part2, .about-part3{
+/*.about-part1 , .about-part2, .about-part3{
     height:62h;
-    overflow-x:hidden;
-}
+    position:relative;
+    
+}*/
 
-#about{
-    height:30vh;
-    padding-bottom:0;
-}
+
+
 
 .about-part1{
     background:rgb(255, 255, 255);
@@ -154,13 +153,13 @@
 
 
 .about-part2 > img{
-       
+    background-size: cover;
+    background-position: 50% 50%;  
   
+    width:340px;
+    height:56vh;
     position:relative;
-    z-index:-1;
-    margin-left:-550px;
-    overflow-y:hidden;
-    
+    z-index:1;
 
     
     
@@ -171,8 +170,9 @@
 
 .about-part3{
     background:rgb(227, 174, 87);
-    padding:30px 30px 50px 50px;
-    
+    padding:30px 30px 42px 50px;
+    position:relative;
+    z-index:1;
 }
  .about-part3  h1{
      color:white;
@@ -187,7 +187,7 @@
 }
 
 .about-part3  .skill{
-    padding:5px 0 5px 0;
+    padding:10px 0 10px 0;
 }
 
   
@@ -217,21 +217,84 @@
 
   /* css for service section   */
 
+.service-part1{
+    background:rgb(227, 174, 87);
+}
+
+.service-part2{
+    background:rgb(245, 137, 37);
+}
+.service-part3{
+    background:rgb(27, 27, 26);
+}
+.service-part4{
+    background:rgb(255, 255, 255);
+}
+
+
+.service-part1, .service-part2, .service-part3,.service-part4{
+    position:relative;
+    bottom:0;
+    height:50vh;
+    padding: 52px 22px 52px 22px;
+
+    
+}
+
+
+#service > div{
+   text-align:center;
+   
+  }
+  .service-part1, .service-part2, .service-part3{
+   color:white;
+}
+.service-part4{
+    color:black;
+    
+}
+
+  
+  #service .fa {
+    font-size: 42px;
+    padding-bottom: 22px;
+  }
+
+  #service p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  
+  
+ 
+
 
 
   
   
+
+
+
+
+
+
+
 
   /*   css for media query*/
   
   @media screen and (max-width:768px){
    
   
-   .leftside > img{
-
-    position:absolute;
+   .home-leftside > img{
     
-    overflow-x:hidden;
+        width:657px;
+        height: 100vh;
+        object-fit: cover;
+        object-position:50% 50%;
+       
+        
+    
    }
 
     .home-title{
@@ -244,7 +307,9 @@
 
     /*  for about section */
     
-    
+    .about-part2 img{
+        width:100%
+    }
      
 
   

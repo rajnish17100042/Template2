@@ -1,7 +1,9 @@
 
   
 
-
+html{
+    scroll-behavior:smoth;
+}
 
 
 *{
@@ -29,18 +31,15 @@
 
 
 
-.home-leftside{
+/*.home-leftside{
     background:rgb(248, 248, 248);
 
-}
+}*/
 
 .home-rightside{
     background:#f1e2d7;
 }
 .home-leftside > img{    
-    background-size: cover;
-    background-position: 50% 50%;
-    
     height:100vh;
     position:relative;
     margin-left:-174px;
@@ -49,8 +48,8 @@
 
 .home-leftside > a{
     position:absolute;
-    margin-left:120px;
-    margin-top:20px;
+    left:120px;
+    top:20px;
     z-index:1;
     color:rgb(8, 8, 8);
     font-size:25px;
@@ -60,12 +59,11 @@
 }
 
 .home-title{
-    padding-top:160px;
-    padding-left:50px;
-    padding-right:50px;
+    padding:160px 50px 0 50px;
+
 }
 
-.home-title > h4{
+.home-title h4{
   text-transform:uppercase;
   color: #999;
   font-size: 12px;
@@ -75,12 +73,12 @@
   
 }
 
-.home-title > p{
+.home-title  p{
     
     color: rgb(153, 153, 153);
     font-size: 15px;
     font-weight:bold;
-    letter-spacing: 2px;
+    letter-spacing:2px;
     
     
   }
@@ -110,24 +108,22 @@
 
 /*  css for about section   */
 
-/*.about-part1 , .about-part2, .about-part3{
+.about-part1 , .about-part2, .about-part3{
     height:62h;
     position:relative;
     
-}*/
+}
 
 
 
 
 .about-part1{
     background:rgb(255, 255, 255);
-    position:relative;
-    z-index:1;
     padding:50px;
     
 }
 
-.about-part1 >h1{
+.about-part1 h1{
     font-size: 42px;
     padding-bottom: 14px;
     margin-bottom: 0px;
@@ -142,16 +138,15 @@
 .about-part1 > p{
 
     color: rgba(17, 16, 16, 0.8);
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
     line-height: 28px;
     letter-spacing: 2px;
 }
 
 
-.about-part2 > img{
-    background-size: cover;
-    background-position: 50% 50%;  
+.about-part2  img{
+    
   
     width:340px;
     height:58.40vh;
@@ -163,8 +158,7 @@
 .about-part3{
     background:rgb(227, 174, 87);
     padding:30px 30px 42px 50px;
-    position:relative;
-    z-index:1;
+   
 }
  .about-part3  h1{
      color:white;
@@ -241,10 +235,11 @@
   .service-part1, .service-part2, .service-part3{
    color:white;
 }
-.service-part4{
+.service-part4  h3, p{
     color:black;
     
 }
+
 
   
   #service .fa {
@@ -284,7 +279,7 @@
 }
 
 .exp-part2{
-    padding:45px 0 45px 60px;
+    padding:20px 0 45px 60px;
 }
 
 .exp-part2 h1,h3{
@@ -294,19 +289,18 @@
 }
 
 .exp-part2 p{
-    font-size:18px;
+    font-size:15px;
     
 }
 
 
   
-  #experience .fa {
+#experience .fa {
     font-size: 42px;
-    margin-right: 14px;
     color:white;
   }
   
-  #experience small {
+#experience small {
     color: rgb(65, 10, 10);
     font-size:15px;
     font-weight:bold;
@@ -367,7 +361,7 @@
 
 #quotes  img{
     
-    position:sticky;
+    position:relative;
     width:100%;
     height:80vh;
     z-index:-1;
@@ -417,8 +411,7 @@
 
   
 .contact-part1, .contact-part2, .contact-part3{
-    position:relative;
-    bottom:0;
+    
     height:75vh;
     
 }
@@ -432,9 +425,9 @@
 padding:10px 0 5px 5px;
 }
 
-#contact .form-control::-moz-placeholder{color:#ffffff;opacity:1}
-#contact .form-control:-ms-input-placeholder{color:#ffffff}
-#contact .form-control::-webkit-input-placeholder{color:#ffffff}
+#contact .form-control::placeholder{color:#ffffff;opacity:1}  /* for Chrome, Firefox, Opera, Safari 10.1+  */
+#contact .form-control:-ms-input-placeholder{color:#ffffff}      /* for IE 10-11  */
+#contact .form-control::-webkit-input-placeholder{color:#ffffff}  /* for Microsoft edge */
   
   
   #contact .form-control {
@@ -543,7 +536,7 @@ padding:10px 0 5px 5px;
     cursor: pointer;
     font-size: 16px;
     text-decoration: none;
-    transition: all 0.4s ease-in-out;
+    
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -559,6 +552,9 @@ padding:10px 0 5px 5px;
     color: #ffffff;
     transform: scale(1.1);
 }
+
+
+
 
 
 

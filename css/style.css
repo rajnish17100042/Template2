@@ -1,15 +1,19 @@
 
   
 
+* {
+    box-sizing: border-box;
+  }
+
 html{
-    scroll-behavior:smoth;
+    scroll-behavior:smooth;;
 }
 
 
-*{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-	font-weight: 300;
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-style:normal;
+    font-weight:100;
 	
 }
 
@@ -109,8 +113,9 @@ html{
 /*  css for about section   */
 
 .about-part1 , .about-part2, .about-part3{
-    height:62h;
+    
     position:relative;
+    height:55h;
     
 }
 
@@ -142,12 +147,12 @@ html{
     font-weight: bold;
     line-height: 28px;
     letter-spacing: 2px;
+    text-align:left;
 }
 
 
 .about-part2  img{
     
-  
     width:340px;
     height:58.40vh;
     position:relative;
@@ -228,7 +233,7 @@ html{
 }
 
 
-#service > div{
+#service  div{
    text-align:center;
    
   }
@@ -371,13 +376,13 @@ html{
 .bg-black{
     background:rgba(0,0,0,0.6);
 }
+
 .quotes-body{
     position:absolute;
-    top:30%;
+    top:20%;
     left:0;
     right:0;
     z-index:1;
-   
     color:white;
     text-align:center;
     font-size:30px;
@@ -495,6 +500,8 @@ padding:10px 0 5px 5px;
 .contact-info a{
     color:rgb(227, 174, 87);
     padding:5px;
+    text-decoration:none;
+
   }
 
   
@@ -516,6 +523,7 @@ padding:10px 0 5px 5px;
 
  .footer-copyright a{
      color:rgb(227, 174, 87);
+     text-decoration: none;
  }
  .social-icon {
     position: relative;
@@ -536,13 +544,10 @@ padding:10px 0 5px 5px;
     cursor: pointer;
     font-size: 16px;
     text-decoration: none;
-    
     width: 50px;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    vertical-align: middle;
-    position: relative;
     margin: 22px 4px 10px 4px;
 }
 
@@ -595,14 +600,14 @@ padding:10px 0 5px 5px;
     
     .exp-part2{
         margin:0;
-        height:75vh;
+        height:auto;
     }
 
 
     /*   for education section*/
     .edu-part1{
         margin:0;
-        height:85vh;
+        height:auto;
     }
     .quotes-body{
       padding:0;
@@ -617,7 +622,7 @@ padding:10px 0 5px 5px;
   }
   
   .contact-part1{
-      height:90vh;
+      height:auto;
       padding:10px;
   }
 

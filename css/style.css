@@ -115,7 +115,7 @@ body{
 .about-part1 , .about-part2, .about-part3{
     
     position:relative;
-    height:55h;
+    height:58vh;
     
 }
 
@@ -464,6 +464,12 @@ padding:10px 0 5px 5px;
     padding-bottom: 10px;
   }
   
+  #contact textarea {
+    height:100px;
+
+  }
+
+
   #contact input[type="submit"]:hover {
     background: transparent;
     border-color: #ffffff;

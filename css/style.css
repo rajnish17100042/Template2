@@ -35,20 +35,21 @@ body{
 
 
 
-/*.home-leftside{
-    background:rgb(248, 248, 248);
+.home-leftside .bg-image{
+    /* background:rgb(248, 248, 248); */
+    background: url(../img/home-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100vh;
+    
 
-}*/
+}
 
 .home-rightside{
     background:#f1e2d7;
 }
-.home-leftside > img{    
-    height:100vh;
-    position:relative;
-    margin-left:-174px;
-    overflow-x:hidden;
-}
+
 
 .home-leftside > a{
     position:absolute;
@@ -151,12 +152,15 @@ body{
 }
 
 
-.about-part2  img{
+.about-part2 .bg-image{
     
-    width:340px;
-    height:58.40vh;
-    position:relative;
-    z-index:1;
+    background: url(../img/about-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100vh;
+    
+
 }
 
 
@@ -276,11 +280,15 @@ body{
     
 }
 
-.exp-part1 img{
-   
-  
-    width:100%;
-    height:60vh;
+.exp-part1 .bg-image{
+    /* background:rgb(248, 248, 248); */
+    background: url(../img/experience-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100vh;
+    
+
 }
 
 .exp-part2{
@@ -357,10 +365,13 @@ body{
     font-weight:bold;
   }
 
-.edu-part2 img{
+  .edu-part2 .bg-image{
     
-    width:100%;
-    height:75vh;
+    background: url(../img/education-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -478,9 +489,12 @@ padding:10px 0 5px 5px;
 
 
 
-.contact-part2 img{
-    width:100%;
-    height:75vh;
+  .contact-part2 .bg-image{
+    background: url(../img/contact-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .contact-part3{
@@ -569,71 +583,79 @@ padding:10px 0 5px 5px;
 
 
 
-  /*   css for media query*/
+ /*   css for media query*/
   
-  @media screen and (max-width:768px){
+ @media screen and (max-width:768px){
    
-  
-   .home-leftside > img{
-    
-        width:657px;
-        height: 100vh;
-        object-fit: cover;
-        object-position:50% 50%;
-       
-        
-    
+    body{
+        overflow-x:hidden;
+     }
+ 
+   .navbar{
+       display:none;
    }
-
-    .home-title{
-        padding:50px;
-
-        
-        
-    }
-
-
-    /*  for about section */
-    
-    .about-part2 img{
-        width:100%
-    }
+   
      
-
-  
-    /*   for experience section*/
-
+   
+     .home-title{
+         padding:50px;
+     }
+     
+ 
+ 
+     /*  for about section */
+     .about-part1{
+         height:70vh;
+     }
+     
+     .about-part2 img{
+         width:100%
+     }
+      
+ 
+   
+     /*   for experience section*/
+ 
+     
+     .exp-part2{
+         margin:0;
+         height:auto;
+     }
+ 
+ 
+     /*   for education section*/
+     .edu-part1{
+         margin:0;
+         height:auto;
+     }
+     .quotes-body{
+       padding:0;
+     }
+     .quotes-body h2{
+     padding:2px;;
+     }
+    .quotes-body p{
+     
+     padding:2px;
+ 
+     }
+   
+   .contact-part1{
+       height:auto;
+       padding:10px;
+     }
+ 
+   footer {
+     padding: 40px 0;
+    }
+ }
+ 
+ @media screen and (max-width:600px){
     
-    .exp-part2{
-        margin:0;
+    .about-part1{
         height:auto;
     }
-
-
-    /*   for education section*/
-    .edu-part1{
-        margin:0;
-        height:auto;
-    }
-    .quotes-body{
-      padding:0;
-   }
-    .quotes-body h2{
-    padding:2px;;
-  }
-   .quotes-body p{
     
-    padding:2px;
-
-  }
-  
-  .contact-part1{
-      height:auto;
-      padding:10px;
-  }
-
-  footer {
-    padding: 40px 0;
-  }
-}
-
+ 
+ 
+ }

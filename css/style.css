@@ -167,6 +167,7 @@ body{
 .about-part3{
     background:rgb(227, 174, 87);
     padding:30px 30px 42px 50px;
+    height:auto;
    
 }
  .about-part3  h1{
@@ -325,14 +326,12 @@ body{
     background:rgb(227, 174, 87);
 }
 
-.edu-part2{
-    background:rgb(107, 34, 34);
-}
+
   
 .edu-part1, .edu-part2{
     position:relative;
     bottom:0;
-    height:75vh;
+    height:70vh;
     
 }
 

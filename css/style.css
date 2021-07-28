@@ -49,50 +49,32 @@ body{
     text-transform: uppercase;
   }
 
-.topnav a.active{
+.topnav a.navbar-brand{
     color:rgb(8, 8, 8);
+    font-size:20px;
+    font-weight: bold;
+    letter-spacing:1px;
+    text-shadow: 2px 1px rgb(24, 23, 23);
+    
+}
+
+.topnav a.navbar-brand:hover{
+   color:rgb(8, 8, 8);
     
 }
   
-  /* Change the color of links on hover */
   .topnav a:hover {
     color:rgb(227, 174, 87);
   }
   
-  /* Add an active class to highlight the current page */
-  
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
+.topnav .icon {
     display: none;
   }
 
 
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    
-    }
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
+ 
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 600px) {
-    
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
+  
 
 
 
@@ -127,7 +109,7 @@ body{
 
 
 .home-title{
-    padding:100px 50px 0 50px;
+    padding:160px 50px 0 50px;
 
 }
 
@@ -646,7 +628,14 @@ padding:10px 0 5px 5px;
 
 
  /*   css for media query*/
-  
+
+@media screen and (max-width:1024px){
+   
+    .home-title{
+        padding-top:80px;
+    } 
+
+}
  @media screen and (max-width:768px){
    
     body{
@@ -654,21 +643,11 @@ padding:10px 0 5px 5px;
         height:auto;
      }
  
-  
-   
-     
-    
-     
+    /*   for experience section*/
  
- 
-     
-     
-     
- 
-   
-     /*   for experience section*/
- 
-     
+    .home-title{
+        padding-top:30px;
+    }     
      .exp-part2{
          margin:0;
          height:auto;
@@ -676,7 +655,7 @@ padding:10px 0 5px 5px;
  
  
      /*   for education section*/
-     .edu-part1{
+    .edu-part1{
          margin:0;
          height:auto;
      }
@@ -692,17 +671,43 @@ padding:10px 0 5px 5px;
  
      }
    
-   .contact-part1{
+    .contact-part1{
        height:auto;
        padding:10px;
      }
  
-   footer {
+    footer {
      padding: 40px 0;
     }
  }
  
  @media screen and (max-width:600px){
+    
+
+    .topnav a:not(:first-child) {
+        display: none;
+    
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+
+     /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
     
     .about-part1{
         height:auto;
